@@ -1,7 +1,8 @@
 /*
- In selection sort elements are arranged from left end of the container.
- Always a smallest element is pick from unsorted part and swaped with 
- starting index of the unsorted part of the container.
+ In selection sort, array is divided into two subarrays left and right. 
+ Left subarray will be sorted and right subarray will be unsorted.
+ Each time, from unsorted subarray minimum or maximum element is picked
+ and placed at the end of sorted subarray.
 */
 
 #include<iostream>
