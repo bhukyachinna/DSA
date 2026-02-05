@@ -22,13 +22,15 @@ void selection_sort(int arr[], int n){
     }
 }
 
-int main(int argc, char* argv[]){
+int main(){
     
-    int n = argc - 1;
+    int n;
+    printf("Enter total no.of elements : ");
+	scanf("%d", &n);
     int arr[n];
 
     for(int i = 0; i < n; i++){
-        arr[i] = atoi(argv[i + 1]);
+        scanf("%d", &arr[i]);
     }
 
 	printf("Array before sorting: ");
@@ -36,7 +38,7 @@ int main(int argc, char* argv[]){
 		printf("%d, ", arr[i]);
 	}
 
-    selection_sort(arr, argc);
+    selection_sort(arr, n);
 	printf("\nArray after sorting: ");
 	for(int i = 0; i < n; i++) {
 		printf("%d, ", arr[i]);
